@@ -7,8 +7,8 @@
 	$titulo = $filmes->results[$rand]->title;
 	$quantidadeVotos = $filmes->results[$rand]->vote_count;
 	$descricaoFilme = $filmes->results[$rand]->overview;
+	$mediaVotosFilme = $filmes->results[$rand]->vote_average;
 	
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,9 +25,9 @@
 			}
 			
 			#dados{
-				margin-top: 90px;
+				margin-top: 40px;
 				margin-left: 150px;
-				width: 400px;
+				width: 420px;
 				height: 420px;
   				padding-left: 330px;
 			}
@@ -35,13 +35,17 @@
 				margin-bottom: 30px;
 				color: #FF0000;
 				text-align: center;
+				margin-top: -5px;
+				font-size: 2em;
 			}
 			#dados h3{
 				color: #FF4500;
+				margin-top: -3px;
 			}
 			#dados p{
 				color: #FFFFFF;
 				font-weight: bold;
+				margin-top: -3px;
 			}
 		</style>
 	</head>
@@ -52,25 +56,10 @@
 			<p><?php echo $titulo; ?></p>
 			<h3>Votos que o filme recebeu </h3>
 			<p><?php echo $quantidadeVotos; ?></p>
+			<h3>Pontuação média do filme </h3>
+			<p><?php echo $mediaVotosFilme; ?></p>
 			<h3>Descrição do filme </h3>
 			<p><?php echo $descricaoFilme; ?></p>
 		</div>
-		<!-- <script type="text/javascript">
-			function atualiza(){
-				var page = "projeto.php";
-				$.ajax
-				//randomico = Math.floor(Math.random() * 20);
-						({
-							type: 'POST',
-							dataType: 'html',
-							url: projeto.php,
-							//data:{'randomico': randomico},
-							success: function (msg){
-								$("#dados").html(msg);
-							}
-						})
-						
-			}
-		</script> -->
 	</body>
 </html>
