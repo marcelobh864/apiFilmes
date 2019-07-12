@@ -30,28 +30,28 @@
 			}
 			
 			#dados{
-				margin-top: 40px;
+				margin-top: 4%;
 				margin-right: 5%;
-				width: 30%;
-				height: 420px;
-  				padding-left: 18%;
+				width: 32%;
+				height: 35%;
+  				padding-left: 16%;
 			}
 			#dados h1{
-				margin-bottom: 30px;
+				margin-bottom: 20%;
 				color: #FF0000;
 				text-align: center;
-				margin-top: -5px;
+				margin-top: -1%;
 				font-size: 2em;
 			}
 			#dados h3{
 				color: #FF4500;
-				margin-top: -3px;
+				margin-top: -1%;
 				font-size: 1.4em;
 			}
 			#dados p{
 				color: #FFFFFF;
 				font-weight: bold;
-				margin-top: -3px;
+				margin-top: -1%;
 				font-size: 16;
 			}
 			.fonte{
@@ -60,7 +60,7 @@
 				color: #FFFFFF;
 			}
 			#imagem{
-				margin-top: -445px;
+				margin-top: -18%;
 				float: left;
   				padding-left: 58%;
 			}
@@ -81,7 +81,7 @@
 		</div>
 		<div id="imagem">
 			<h3 style="margin-left: 20%; font-size: 1.4em; font-weight: bold; color: #FF0000;">Poster do filme</h3>
-			<p><img height="45%" width="75%" alt="Filme sem Banner" src="<?php echo $img; ?>" ></p>
+			<p><img height="48%" width="75%" alt="Filme sem Banner" src="<?php echo $img; ?>" ></p>
 		</div>
 	</body>
 </html>
